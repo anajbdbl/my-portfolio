@@ -1,0 +1,76 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #2c3e50;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #4ca987;
+}
+
+.profileImage {
+  border-radius: 50%;
+}
+
+.bio {
+  max-width: 600px;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.skillsSection,
+.passionSection {
+  margin-top: 3rem;
+}
+
+.skillsSection h2,
+.passionSection h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skillsGrid span {
+  background-color: #4ca987;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+.passionSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.passionSection li {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
