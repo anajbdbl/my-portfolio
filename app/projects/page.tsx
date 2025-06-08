@@ -10,6 +10,13 @@ const projects = [
     image: '/film-log-preview.png',
   },
   {
+    title: 'Case Study Demo',
+    category: 'Parallax Example',
+    link: '/case-study',
+    bgColor: '#002A24',
+    image: '/portfolio-redesign.png',
+  },
+  {
     title: 'URL Shortener',
     category: 'Next.js Project',
     link: 'https://mp-5-mocha.vercel.app/',
