@@ -1,5 +1,5 @@
 .navbar {
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -10,6 +10,13 @@
   font-family: inherit;
   font-size: 0.95rem;
   z-index: 999;
+  transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shrink {
+  padding: 0.75rem 1.5rem;
+  background-color: #FAF8F4;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .logo {

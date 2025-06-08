@@ -11,6 +11,7 @@
 
 .item {
   position: relative;
+  transition: background-color 0.3s ease;
 }
 
 .circle {
@@ -34,6 +35,7 @@
   font-weight: 600;
   color: #1a1a1a;
   margin-bottom: 0.3rem;
+  transition: color 0.3s ease;
 }
 
 .company {
@@ -54,4 +56,8 @@
   font-size: 1rem;
   color: #444;
   line-height: 1.6;
+}
+
+.item:hover .title {
+  color: #03332E;
 }
