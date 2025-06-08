@@ -54,11 +54,11 @@ export default function About() {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>What I am Passionate About</h2>
         <ul className={styles.passions}>
-          <li>🌱 Using tech to solve real-world problems</li>
-          <li>🎨 Clean UI & intuitive UX</li>
-          <li>👩‍🏫 Teaching, mentoring, and lifting others up</li>
-          <li>🧠 Building things that merge creativity and logic</li>
-          <li>🌍 Promoting diversity and inclusion in tech</li>
+          <li>Using tech to solve real-world problems</li>
+          <li>Clean UI & intuitive UX</li>
+          <li>Teaching, mentoring, and lifting others up</li>
+          <li>Building things that merge creativity and logic</li>
+          <li>Promoting diversity and inclusion in tech</li>
         </ul>
       </section>
     </main>

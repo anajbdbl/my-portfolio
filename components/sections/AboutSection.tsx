@@ -7,7 +7,9 @@ export default function AboutSection() {
       <div className={styles.layout}>
         <h2 className={styles.heading}>ABOUT<br />ANA JULIA</h2>
         <p className={styles.text}>
-          I build user-friendly interfaces that blend form and function — rooted in empathy, guided by logic.
+          Function meets feeling. That’s the sweet spot I build for.
+          I’m Ana Julia — a developer with a visual mind and a systems brain. 
+          My portfolio explores the tension between structure and spontaneity, always chasing balance between clarity and curiosity.
         </p>
       </div>
       <div className={styles.linkWrapper}>

@@ -3,7 +3,7 @@ import Hero from '@/components/Hero';
 import WorkSection from '@/components/sections/WorkSection';
 import AboutSection from '@/components/sections/AboutSection';
 import ContactSection from '@/components/sections/ContactSection';
-import EditorialSection from '@/components/sections/EditorialSection';
+// import EditorialSection from '@/components/sections/EditorialSection';
 import AnimatedReveal from '@/components/AnimatedReveal';
 
 export default function HomePage() {
@@ -11,10 +11,6 @@ export default function HomePage() {
     <>
       <AnimatedReveal>
         <Hero />
-      </AnimatedReveal>
-
-      <AnimatedReveal>
-        <EditorialSection />
       </AnimatedReveal>
 
       <section id="work">

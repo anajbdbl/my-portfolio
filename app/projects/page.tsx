@@ -14,7 +14,7 @@ const projects = [
     category: 'Parallax Example',
     link: '/case-study',
     bgColor: '#002A24',
-    image: '/portfolio-redesign.png',
+    image: '/parallax.png',
   },
   {
     title: 'URL Shortener',
