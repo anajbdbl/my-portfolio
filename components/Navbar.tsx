@@ -3,7 +3,7 @@
 
 import styles from './Navbar.module.css';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -12,12 +12,21 @@ import { Link as ScrollLink } from 'react-scroll';
 export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [shrink, setShrink] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShrink(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${shrink ? styles.shrink : ''}`}>
       <Link href="/" className={styles.logo} onClick={closeMenu}>
         <Image src="/logo.svg" alt="Ana Julia Logo" width={50} height={50} />
       </Link>
