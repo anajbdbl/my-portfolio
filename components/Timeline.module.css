@@ -1,0 +1,67 @@
+.wrapper {
+    position: relative;
+    padding-left: 2rem;
+  }
+  
+  .line {
+    position: absolute;
+    left: 1.25rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #03332E;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 2rem;
+  }
+  
+  .item {
+    position: relative;
+  }
+  
+  .circle {
+    position: absolute;
+    left: -2rem;
+    top: 0.3rem;
+    width: 14px;
+    height: 14px;
+    background-color: #03332E;
+    border-radius: 50%;
+    border: 3px solid #FAF8F4;
+    z-index: 1;
+  }
+  
+  .content {
+    padding-left: 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 0.25rem;
+  }
+  
+  .company {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 0.15rem;
+  }
+  
+  .date {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  

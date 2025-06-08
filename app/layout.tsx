@@ -1,13 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export const metadata: Metadata = {
-  title: 'Ana Julia Portfolio',
+  title: "Ana Julia's Portfolio",
   description: 'Personal website for Ana Julia Bortolossi',
 };
 
@@ -18,11 +15,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer /> 
+      <head>
+        <link rel="icon" href="/logo.svg" sizes="any" />
+      </head>
+      <body>
+        <div className="layout">
+          <Navbar />
+          <main className="main">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
 }
+
