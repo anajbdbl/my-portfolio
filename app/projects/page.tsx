@@ -10,11 +10,11 @@ const projects = [
     image: '/film-log-preview.png',
   },
   {
-    title: 'Art Explorer',
-    category: 'API Redesign',
-    link: 'https://shielded-shelf-88711-54e46ae20d3c.herokuapp.com/film_log/',
+    title: 'URL Shortener',
+    category: 'Next.js Project',
+    link: 'https://mp-5-mocha.vercel.app/',
     bgColor: '#111111', // soft black
-    image: '/art-explorer-preview.png',
+    image: '/url-preview.png',
   },
   {
     title: 'Portfolio Redesign',

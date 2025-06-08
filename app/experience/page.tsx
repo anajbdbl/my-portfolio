@@ -33,6 +33,15 @@ export default function ExperiencePage() {
     <main className={styles.container}>
       <h1 className={styles.heading}>Work Experience</h1>
       <Timeline items={experiences} />
+      <div className={styles.downloadWrapper}>
+        <a
+          href="/Ana Julia Bortolossi Resume.docx.pdf"
+          download
+          className={styles.downloadButton}
+        >
+          Download My Resume →
+        </a>
+      </div>
     </main>
   );
 }

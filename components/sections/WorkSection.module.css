@@ -1,0 +1,74 @@
+.section {
+    background-color: #03332E;
+    color: #FAF8F4;
+    padding: 4rem 1.5rem;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  
+  .layout {
+    display: flex;
+    justify-content: center;        /* centers the two columns as a group */
+    align-items: center;
+    gap: 3rem;                      
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    min-width: 260px;
+  }
+  
+  .job {
+    margin-bottom: 2rem;
+  }
+  
+  .job h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  
+  .job p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #D8D8D8;
+  }
+
+  .linkWrapper {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .learnMore {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+    background-color: transparent;
+    color: #FAF8F4;
+    text-decoration: none;
+    border: 1px solid #FAF8F4;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .learnMore:hover {
+    background-color: #FAF8F4;
+    color: #03332E;
+  }
+  
+  

@@ -1,0 +1,51 @@
+.section {
+  background-color: #FAF8F4;
+  color: #1A1A1A;
+  padding: 3.5rem 1.25rem;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;        /* centers the two columns as a group */
+  align-items: flex-start;
+  gap: 2rem;                      /* tightened from 3rem+ */
+  max-width: 960px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: pre-line;
+}
+
+.text {
+  font-size: 1.2rem;
+  max-width: 420px;
+  line-height: 1.7;
+}
+
+.linkWrapper {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.learnMore {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  background-color: transparent;
+  color: #03332E;
+  text-decoration: none;
+  border: 1px solid #03332E;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.learnMore:hover {
+  background-color: #03332E;
+  color: #FAF8F4;
+}

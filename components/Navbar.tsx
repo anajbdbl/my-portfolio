@@ -1,11 +1,13 @@
+/* eslint-disable react/jsx-no-undef */
 'use client';
 
-import Link from 'next/link';
 import styles from './Navbar.module.css';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
+import Link from 'next/link';
 import Image from 'next/image';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -17,25 +19,49 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <Link href="/" className={styles.logo} onClick={closeMenu}>
-        <Image src="/logo.svg" alt="Ana Julia Logo" width={40} height={40} />
+        <Image src="/logo.svg" alt="Ana Julia Logo" width={50} height={50} />
       </Link>
 
       <button className={styles.menuButton} onClick={toggleMenu}>
-        {menuOpen ? <FiX size={22} /> : <FiMenu size={22} />}
+        {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
       </button>
 
       <ul className={`${styles.navLinks} ${menuOpen ? styles.mobileOpen : ''}`}>
-        <li className={pathname === '/experience' ? styles.active : ''}>
-          <Link href="/experience" onClick={closeMenu}>Experience</Link>
+        <li>
+          <ScrollLink
+            to="work"
+            smooth={true}
+            offset={-60}
+            duration={500}
+            onClick={closeMenu}
+          >
+            Work
+          </ScrollLink>
+        </li>
+        <li>
+          <ScrollLink
+            to="about"
+            smooth={true}
+            offset={-60}
+            duration={500}
+            onClick={closeMenu}
+          >
+            About
+          </ScrollLink>
+        </li>
+        <li>
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            offset={-60}
+            duration={500}
+            onClick={closeMenu}
+          >
+            Contact
+          </ScrollLink>
         </li>
         <li className={pathname === '/projects' ? styles.active : ''}>
           <Link href="/projects" onClick={closeMenu}>Projects</Link>
-        </li>
-        <li className={pathname === '/about' ? styles.active : ''}>
-          <Link href="/about" onClick={closeMenu}>About</Link>
-        </li>
-        <li className={pathname === '/contact' ? styles.active : ''}>
-          <Link href="/contact" onClick={closeMenu}>Contact</Link>
         </li>
       </ul>
     </nav>

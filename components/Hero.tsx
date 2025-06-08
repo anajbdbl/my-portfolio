@@ -20,7 +20,7 @@ export default function Hero() {
       <h1 className={styles.name}>ANA JULIA BORTOLOSSI</h1>
       <p className={styles.tagline}>I build user-friendly interfaces.</p>
 
-      <Link href="/experience" className={styles.button}>
+      <Link href="/projects" className={styles.button}>
         View My Projects
       </Link>
 

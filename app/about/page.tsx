@@ -24,8 +24,8 @@ export default function About() {
         <div className={styles.bio}>
           <p>
             I’m Ana Julia — a software engineer passionate about blending creativity, logic,
-            and human-centered design. I’m currently studying Computer Science at BU
-            with a minor in Business Management.
+            and human-centered design. I recently graduated from BU with a degree in Computer Science
+            and a minor in Business Management and administration.
           </p>
           <p>
             I love building things that are intuitive, meaningful, and user-focused — whether it’s
