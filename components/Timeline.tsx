@@ -1,3 +1,4 @@
+'use client';
 import styles from './Timeline.module.css';
 import AnimatedReveal from '@/components/AnimatedReveal';
 import { motion } from 'framer-motion';
