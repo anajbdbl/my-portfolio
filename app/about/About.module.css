@@ -1,100 +1,165 @@
 .container {
-  max-width: 900px;
+  max-width: 1050px;
   margin: 0 auto;
-  padding: 5rem 1.5rem;
+  padding: 6rem 2rem;
+  color: #1A1A1A;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 1.25rem;
+}
+
+.intro {
+  max-width: 850px;
+  margin-bottom: 4rem;
 }
 
 .heading {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #1A1A1A;
-  margin-bottom: 0.5rem;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+  margin: 0;
+  max-width: 800px;
 }
 
-.tagline {
-  font-size: 1.15rem;
-  color: #444;
-  margin-bottom: 3rem;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  align-items: flex-start;
+.bioGrid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
   margin-bottom: 4rem;
 }
 
 .image {
-  flex: 1 1 260px;
-  max-width: 260px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .profileImage {
-  border-radius: 12px;
-  object-fit: cover;
   width: 100%;
   height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
 }
 
 .bio {
-  flex: 2;
-  min-width: 280px;
+  padding-top: 0.5rem;
 }
 
-.bio p {
-  font-size: 1.05rem;
-  color: #444;
-  line-height: 1.75;
-  margin-bottom: 1.5rem;
+.bio > p {
+  font-size: 1.02rem;
+  line-height: 1.85;
+  color: #505050;
+  margin: 0 0 1.4rem;
 }
 
 .section {
   margin-top: 4rem;
 }
 
-.sectionTitle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #03332E;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
+.sectionHeader {
+  margin-bottom: 2rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  margin: 0;
 }
 
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  font-size: 1rem;
-  color: #1A1A1A;
-  list-style: none;
-  padding: 0;
+  border-top: 1px solid #ddd;
 }
 
-.passions {
-  list-style: none;
-  padding: 0;
-  font-size: 1.05rem;
-  color: #444;
+.skillRow {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.skillRow h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.skillRow p {
+  font-size: 0.95rem;
   line-height: 1.7;
+  color: #666;
+  margin: 0;
 }
 
-.passions li {
-  margin-bottom: 0.75rem;
+.approachGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.approachGrid article {
+  border-top: 1px solid #ccc;
+  padding-top: 1.25rem;
+}
+
+.approachGrid article > span {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.approachGrid h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.approachGrid p {
+  color: #666;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
-  .grid {
-    flex-direction: column;
-    align-items: center;
+  .container {
+    padding: 4rem 1.5rem;
+  }
+
+  .intro {
+    margin-bottom: 3rem;
+  }
+
+  .bioGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
   }
 
   .image {
-    max-width: 200px;
+    max-width: 280px;
   }
 
-  .bio {
-    width: 100%;
+  .section {
+    margin-top: 4.5rem;
+  }
+
+  .skillRow {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .approachGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }

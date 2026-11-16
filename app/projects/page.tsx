@@ -3,6 +3,13 @@ import ProjectGrid from '@/components/ProjectGrid';
 
 const projects = [
   {
+    title: 'Data Science Projects',
+    category: 'Course Archive',
+    link: 'https://anajbdbl.github.io/',
+    bgColor: '#07150F',
+    image: '/assignments-preview.png',
+  },
+  {
     title: 'Film Log',
     category: 'Django Web App',
     link: 'https://shielded-shelf-88711-54e46ae20d3c.herokuapp.com/film_log/',
@@ -43,13 +50,6 @@ const projects = [
     link: 'https://mp-1-two-gamma.vercel.app/',
     bgColor: '#1A1A1A',
     image: '/resume-preview.png',
-  },
-  {
-    title: 'Assignments Hub',
-    category: 'Course Archive',
-    link: 'https://anajbdbl.github.io/',
-    bgColor: '#07150F',
-    image: '/assignments-preview.png',
   },
 ];
 
