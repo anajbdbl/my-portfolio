@@ -3,6 +3,22 @@ import styles from './Experience.module.css';
 
 const experiences = [
   {
+    title: 'Software Development Engineer',
+    company: 'General Motors Financial',
+    location: 'Fort Worth, TX',
+    date: 'September 2025 – November 2026',
+    description:
+    "Maintained enterprise systems and pipelines while supporting production operations and developed over 20 customer-facing communications and automated journeys using Adobe Journey Optimizer."
+  },
+  {
+    title: 'Course Assistant – CS 210',
+    company: 'Boston University',
+    location: 'Boston, MA',
+    date: 'Jan 2023 – May 2025',
+    description:
+      'Led weekly lab sessions for 20 students on Python, UNIX, C, circuits, and state machines to reinforce lecture concepts and practical skills. Held office hours for personalized support and graded assignments for over 400 students, providing detailed feedback to promote understanding and academic growth.',
+  },
+  {
     title: 'Software Development Engineer Intern',
     company: 'General Motors Financial',
     location: 'Fort Worth, TX',
@@ -18,14 +34,6 @@ const experiences = [
     description:
       'Built scalable, cloud-based applications using React, TypeScript, and JavaScript, focusing on performance, reliability, and maintainability. Designed intuitive user interfaces with data visualizations and integrated third-party APIs to enhance functionality, usability, and overall user satisfaction.',
   },
-  {
-    title: 'Course Assistant – CS 210',
-    company: 'Boston University',
-    location: 'Boston, MA',
-    date: 'Jan 2023 – Present',
-    description:
-      'Led weekly lab sessions for 20 students on Python, UNIX, C, circuits, and state machines to reinforce lecture concepts and practical skills. Held office hours for personalized support and graded assignments for over 400 students, providing detailed feedback to promote understanding and academic growth.',
-  },
 ];
 
 export default function ExperiencePage() {
@@ -35,7 +43,7 @@ export default function ExperiencePage() {
       <Timeline items={experiences} />
       <div className={styles.downloadWrapper}>
         <a
-          href="/Ana Julia Bortolossi Resume.pdf"
+          href="/Ana Julia Bortolossi Resume - Updated.pdf"
           download
           className={styles.downloadButton}
         >

@@ -23,18 +23,16 @@ export default function About() {
 
         <div className={styles.bio}>
           <p>
-            I’m Ana Julia — a software engineer passionate about blending creativity, logic,
-            and human-centered design. I recently graduated from BU with a degree in Computer Science
-            and a minor in Business Management and administration.
+          I am Ana Julia, a software engineer with a degree in 
+          Computer Science from Boston University and a minor in Business Management and Administration.
           </p>
           <p>
-            I love building things that are intuitive, meaningful, and user-focused — whether it’s
-            designing a Django app like Film Log, guiding students as a Course Assistant, or exploring
-            new ways to combine tech with business impact.
+          My experience spans software development, enterprise systems, and customer-facing technology. I have worked on everything from 
+          building applications and data visualizations to maintaining production systems and developing digital customer communications.
           </p>
           <p>
-            I am especially passionate about accessibility, representation in tech, and crafting
-            elegant interfaces that make a difference.
+          I am naturally curious and enjoy taking on unfamiliar challenges, learning how things work, and finding practical ways to bring ideas to life. 
+          I am particularly interested in the intersection of technology, design, and business.
           </p>
         </div>
       </div>

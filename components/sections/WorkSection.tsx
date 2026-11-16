@@ -8,13 +8,17 @@ export default function WorkSection() {
         <h2 className={styles.heading}>WORK EXPERIENCE</h2>
         <div className={styles.layout}>
           <div className={styles.column}>
+          <div className={styles.job}>
+              <h3>Software Development Engineer </h3>
+              <p>September 2025 — November 2026</p>
+            </div>
+            <div className={styles.job}>
+              <h3>Computer Science Course Assistant</h3>
+              <p>January 2023 — May 2025</p>
+            </div>
             <div className={styles.job}>
               <h3>Software Engineer Intern</h3>
               <p>May 2024 — August 2024</p>
-            </div>
-            <div className={styles.job}>
-              <h3>Course Assistant</h3>
-              <p>January 2023 — May 2025</p>
             </div>
             <div className={styles.job}>
               <h3>Software Development Intern</h3>
@@ -23,13 +27,17 @@ export default function WorkSection() {
           </div>
 
           <div className={styles.column}>
-            <div className={styles.job}>
+          <div className={styles.job}>
               <h3>GM Financial</h3>
               <p>Dallas, TX</p>
             </div>
             <div className={styles.job}>
               <h3>Boston University</h3>
               <p>Boston, MA</p>
+            </div>
+            <div className={styles.job}>
+              <h3>GM Financial</h3>
+              <p>Dallas, TX</p>
             </div>
             <div className={styles.job}>
               <h3>Intelimotor</h3>
